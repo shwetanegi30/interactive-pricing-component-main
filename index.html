@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title> Interactive pricing component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+  <main class="conatiner">
+   
+
+    <div class="interactive-pricing">
+      <div class="header">
+        <h1> Simple, traffic-based pricing </h1>
+        <p class="sign-up"> Sign-up for our 30-day trial. No credit card required. </p>
+      </div>
+
+      <div class="box-container">
+
+        <div class="monthly-price">
+          <p class="pg-view"> <span id="pg-view"> 100K </span>  Pageviews  </p>
+
+          <div class="price-value">
+            <p class="dollar">$<span id="month"> 16 </span> .00</p>
+            <p class="time"> /month </p>
+          </div>
+
+        </div>
+        <input type="range" name="range" id="slider-range"   min="0" max="4"  value="2"/>
+
+        <div class="price-value-down">
+          <p class="dollar">$<span id="month2"> 16 </span> .00</p>
+          <p class="time"> /month </p>
+        </div>
+
+        <div id="toggle" class="toggle">
+          <label id="Billing" class="name">Monthly Billing</label>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+
+          <label for="checkbox" class="label">
+            <div class="ball"></div>
+          </label>
+
+          <label class="name Yearly-billing">
+            Yearly Billing
+            <span> 25% discount</span>
+          </label>
+          
+          <label class="name-1">
+            Yearly Billing
+            <span>-25%</span>
+          </label>
+        </div>
+        <hr>
+
+        <div class="footer">
+          <div class="subscription">
+            <div>
+              <img src="images/icon-check.svg" alt="check">
+              Unlimited websites
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="check">
+              100% data ownership
+            </div>
+            <div>
+              <img src="images/icon-check.svg" alt="check">
+              Email reports
+            </div>
+          </div>
+          <button class="trial"> Start my trial </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+ <script src="index.js"></script>
+
+</body>
+
+</html>
